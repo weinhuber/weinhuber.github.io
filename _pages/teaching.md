@@ -31,4 +31,4 @@ Winter 21/22
 
 Supervised Theses
 ======
-* Bachelor's Thesis: "Extending TEASE Enhancing the Reference Implementation of TEMPO"
+* Bachelor's Thesis: "Extending TEASE: Enhancing the Reference Implementation of TEMPO"
