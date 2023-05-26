@@ -11,49 +11,51 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.Sc. in Computer Science, Technical University of Munich, 2024 (expected)
+* B.Sc. in Computer Science, Technical University of Munich, 2020
 
-Work experience
+Experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Sep 2020 - May 2023: Research Assistant
+  * Chair for Foundations of Software Reliability and Theoretical Computer Science (TUM)
+  * Maintainer and developer of dtControl
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Sep 2020 - Oct 2021: Research Assistant
+  * Chair for Foundations of Software Reliability and Theoretical Computer Science (TUM)
+  * Developed, improved and analysed Automata Tutor
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Jul 2022 - Apr 2023: Research & Teaching Assistant
+  * Research Group for Applied Software Engineering (TUM)
+  * Taught a practical course with 80+ students per semester, the fundamentals of agile software engineering using Swift
+
+* Oct 2022 - Mar 2023: Project Lead
+  * Vay (via Research Group for Applied Software Engineering)
+  * Managed a team of 8 software engineers and successfully developed an iOS teledriving application
+
+* Feb 2022 - Mar 2023: Research & Teaching Assistant
+  * JavaScript Technology Seminar (TUM)
+  * Taught a seminar with 30+ students per semester, the fundamentals of agile software engineering using JavaScript
+
+* Mar 2022 - Mar 2023: Research Assistant
+  * Department for Digital Medicine (University Clinic Boon)
+  * Developed an iOS SDK for the open source federated learning framework Flower
+
+* Mar 2022 - Aug 2022: Agile Scrum Coach
+  * IABG (via Research Group for Applied Software Engineering)
+  * Managed a team of 5 software engineers and successfully developed an iOS solar energy trading application
+
+* Mar 2022 - Aug 2022: Software Engineer
+  * ZEISS Medical Technology (via Research Group for Applied Software Engineering)
+  * Developed an iOS clinic management system with indoor location tracking and navigation
+
+* Sep 2019 - Mar 2020: Software Engineer
+  * Clinic and Polyclinic for Dermatology and Allergology (TUM)
+  * Developed a medical image classification, used in the Clinic and Polyclinic for Dermatology and Allergology
+
   
-Talks
+Volunteering
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Google Developer Student Club (2021 - present)
+* Amnesty International (2021 - present)
+* ROCK YOUR LIFE! München e.V. (2021 - 2023)
+
