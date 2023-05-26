@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I'm a master's student from the Technical Univeristy of Munich, who's interested in formal methods. In particularly, I'm interested in model checking, game theory and automata theory.
+I'm a master's student from the Technical Univeristy of Munich, who's interested in bringing formal methods into practice. In particularly, I'm interested in model checking, game theory and automata theory.
