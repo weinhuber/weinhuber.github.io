@@ -22,7 +22,7 @@ Experience
 
 * Sep 2020 - Oct 2021: Research Assistant
   * Chair for Foundations of Software Reliability and Theoretical Computer Science (TUM)
-  * Developed, improved and analysed Automata Tutor
+  * Developer of Automata Tutor
 
 * Jul 2022 - Apr 2023: Research & Teaching Assistant
   * Research Group for Applied Software Engineering (TUM)
