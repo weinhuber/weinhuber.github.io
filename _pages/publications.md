@@ -9,6 +9,7 @@ author_profile: true
 Künstliche Intelligenz zur Erkennung von Zustandsänderungen in hochdimensionalen Patientendaten
 ------
 * Künstliche Intelligenz in der Medizin 2022
+* translation: Artificial intelligence for detecting state changes in high-dimensional patient data.
 
 dtControl 2.0: Explainable strategy representation via decision tree learning steered by experts
 ------
