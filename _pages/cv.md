@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* M.Sc. in Computer Science, Technical University of Munich, 2024 (expected)
-* B.Sc. in Computer Science, Technical University of Munich, 2020
+* M.Sc. in Computer Science, Technical University of Munich (present)
+* B.Sc. in Computer Science, Technical University of Munich
 
 Experience
 ======
