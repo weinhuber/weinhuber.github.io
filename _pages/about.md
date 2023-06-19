@@ -12,8 +12,8 @@ I'm a master's student at the Technical University of Munich, who's interested i
 
 ## Things that I did
 
-### Theoretical Computer Science
-As a Research Assistant (+3 years), I maintained and developed **dtControl**, an open-source tool for representing symbolic controllers as decision trees and **Automata Tutor**, an online educational tool for automata theory and formal languages which is currently used by +50 universities across 5 continents.
+### Formal Methods
+As a Research Assistant (+3 years), I maintained and developed dtControl, an open-source tool for representing symbolic controllers as decision trees and Automata Tutor, an online educational tool for automata theory and formal languages which is currently used by +50 universities across 5 continents.
 
 ### Machine Learning
 Lead various research and software development roles at TUM, Vay and IABG.
