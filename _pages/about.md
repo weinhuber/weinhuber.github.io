@@ -20,4 +20,4 @@ Lead various research and software development roles at TUM, Vay and IABG.
 Other projects included developing a Swift SDK for the federated learning framework Flower, or teaching +100 students in two courses, twice a year, hands-on software engineering and machine learning at TUM.
 
 ## Things that I'm currently doing
-Right now, I'm at the University of Oxford, working on probabilistic verification with a focus on game theory. In particular, I'm interested in leveraging correlation for our use-cases. 
+Right now, I'm at the University of Oxford, working on probabilistic verification with a focus on game theory. In particular, I'm interested in leveraging signals and their impact in correlation games.
