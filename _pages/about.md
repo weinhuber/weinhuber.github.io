@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I'm a master's student at the Technical University of Munich, who's interested in bringing formal methods into practice. I have a broad research interest, ranging from model checking and game theory to privacy preserving technologies like federated learning.
+I'm a master's student at the Technical University of Munich, visiting researcher at the University of Oxford and researcher at the Masaryk University. My research involves applying game-theoretic techniques to the analysis and verification of stochastic multi-agent systems. In particular, I am interested in robust equilibria, which are stable against trembles.
+
 
 ## Things that I did
 
