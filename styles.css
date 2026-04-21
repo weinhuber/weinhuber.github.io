@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+    background-color: #000000;
+    color: #e0e0e0;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: panGrid 28s linear infinite;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.12) 50%, transparent 100%);
+    opacity: 0.12;
+    transform: translateX(-50%);
+    animation: scan 18s linear infinite;
+}
+
+.background::after {
+    content: '';
+    position: absolute;
+    inset: -40%;
+    background:
+        radial-gradient(circle at 20% 25%, rgba(76, 148, 255, 0.16), transparent 55%),
+        radial-gradient(circle at 75% 70%, rgba(120, 255, 215, 0.12), transparent 50%);
+    animation: pulseOverlay 26s ease-in-out infinite;
+    opacity: 0.35;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(160px);
+    opacity: 0.16;
+    mix-blend-mode: screen;
+    animation: orbDrift 36s ease-in-out infinite;
+}
+
+.orb-1 {
+    width: 420px;
+    height: 420px;
+    top: -140px;
+    left: -180px;
+    background: rgba(76, 148, 255, 0.4);
+}
+
+.orb-2 {
+    width: 320px;
+    height: 320px;
+    bottom: -160px;
+    right: -120px;
+    background: rgba(120, 255, 215, 0.35);
+    animation-duration: 42s;
+    animation-direction: alternate;
+}
+
+main {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem;
+    z-index: 1;
+}
+
+header {
+    margin-bottom: 5rem;
+    animation: fadeIn 0.8s ease-out;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-left: 3px solid #ffffff;
+    padding-left: 1rem;
+}
+
+h2 {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.bio {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.7;
+    color: #a0a0a0;
+    max-width: 42rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.bio a {
+    color: #b5b5b5;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.bio a:hover {
+    color: #e0e0e0;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 0.875rem;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.defense {
+    margin-bottom: 5rem;
+    animation: fadeIn 0.8s ease-out 0.15s both;
+}
+
+.defense-intro {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    color: #9aa2ad;
+    max-width: 40rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.defense-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.defense-card {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.015);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.defense-card:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.defense-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(224, 224, 224, 0.6);
+}
+
+.defense-value {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    letter-spacing: 0.08em;
+    color: #ffffff;
+}
+
+.defense-card p {
+    font-size: 0.75rem;
+    color: #8a8a8a;
+    line-height: 1.6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.defense-footer {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(224, 224, 224, 0.55);
+}
+
+.defense-note {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.defense-beacon {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: rgba(120, 255, 215, 0.9);
+    box-shadow: 0 0 0 0 rgba(120, 255, 215, 0.35);
+    animation: pulseBeacon 2.8s ease-out infinite;
+}
+
+.publications {
+    animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+.publications ul {
+    list-style: none;
+}
+
+.publications li {
+    margin-bottom: 1.5rem;
+    animation: fadeIn 0.8s ease-out both;
+}
+
+.publications li:nth-child(1) { animation-delay: 0.3s; }
+.publications li:nth-child(2) { animation-delay: 0.4s; }
+.publications li:nth-child(3) { animation-delay: 0.5s; }
+
+.publications a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    display: block;
+    position: relative;
+    padding-left: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.publications a::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.publications a:hover {
+    color: #ffffff;
+    padding-left: 2rem;
+}
+
+.publications a:hover::before {
+    opacity: 1;
+}
+
+footer {
+    margin-top: 8rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 0.875rem;
+    color: rgba(140, 140, 140, 0.6);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes panGrid {
+    0% {
+        background-position: 0 0, 0 0;
+    }
+    100% {
+        background-position: 0 50px, 50px 0;
+    }
+}
+
+@keyframes scan {
+    0% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes pulseOverlay {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        opacity: 0.45;
+        transform: rotate(12deg) scale(1.03);
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes orbDrift {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+        transform: translate3d(40px, -30px, 0) scale(1.05);
+    }
+    100% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+}
+
+@keyframes pulseBeacon {
+    0% {
+        box-shadow: 0 0 0 0 rgba(120, 255, 215, 0.35);
+        transform: scale(1);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(120, 255, 215, 0);
+        transform: scale(1.08);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(120, 255, 215, 0);
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 4rem 1.5rem;
+    }
+    
+    header {
+        margin-bottom: 3rem;
+    }
+    
+    .links {
+        gap: 1.5rem;
+    }
+    
+    .orb {
+        width: 250px;
+        height: 250px;
+    }
+
+    .defense {
+        margin-bottom: 4rem;
+    }
+
+    .defense-footer {
+        flex-direction: row;
+        align-items: center;
+    }
+}

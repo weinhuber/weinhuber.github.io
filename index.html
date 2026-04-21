@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weinhuber</title>
+    <meta name="description" content="Academic publications and research">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+    
+    <main>
+        <header>
+            <h1>Christoph Weinhuber</h1>
+            <p class="bio">
+                I am a second-year PhD student at the University of Oxford, where I study Artificial Intelligence with a focus on decision-making under uncertainty and long-term goal reasoning. My research focuses on stochastic planning and reinforcement learning, often involving temporally extended goals expressed through logics.
+                I am very fortunate to be supervised by
+                <a href="https://www.cs.ox.ac.uk/people/giuseppe.degiacomo/" target="_blank" rel="noopener noreferrer">Giuseppe De Giacomo</a>,
+                <a href="https://www.cs.ox.ac.uk/people/david.parker/" target="_blank" rel="noopener noreferrer">Dave Parker</a> and <a href="https://www.cs.ox.ac.uk/people/alessandro.abate/" target="_blank" rel="noopener noreferrer">Alessandro Abate</a>.
+            </p>
+            
+            <div class="links">
+                <a href="https://www.linkedin.com/in/weinhuber" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/weinhuber" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://orcid.org/0000-0002-1600-4933" target="_blank" rel="noopener noreferrer">ORCID</a>
+                <a href="https://www.cs.ox.ac.uk/people/christoph.weinhuber" target="_blank" rel="noopener noreferrer">Oxford</a>
+                <a href="https://scholar.google.com/citations?user=ZK9goDEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            </div>
+        </header>
+
+        <section class="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://arxiv.org/pdf/2604.17347" target="_blank" rel="noopener noreferrer">Formal Foundations of Agentic Business Process Management</a></li>
+                <li><a href="https://arxiv.org/pdf/2602.06746" target="_blank" rel="noopener noreferrer">Semantically Labelled Automata for Multi-Task Reinforcement Learning with LTL Instructions</a></li>
+                <li><a href="https://arxiv.org/pdf/2601.10651" target="_blank" rel="noopener noreferrer">Multi-Property Synthesis</a></li>
+                <li><a href="https://arxiv.org/pdf/2511.09073" target="_blank" rel="noopener noreferrer">Good-for-MDP State Reduction for Stochastic LTL Planning</a></li>
+                <li><a href="http://www.diag.uniroma1.it/~degiacom/papers/2025/LM4Plan@ICAPS25cdmw.pdf" target="_blank" rel="noopener noreferrer">A Requirements Engineering-Driven Methodology for Planning Domain Generation via LLMs with Invariant-Based Refinement</a></li>
+                <li><a href="https://arxiv.org/pdf/2508.14725?" target="_blank" rel="noopener noreferrer">Emerson-Lei and Manna-Pnueli Games for LTLf+ and PPLTL+ Synthesis</a></li>
+                <li><a href="https://www.ijcai.org/proceedings/2025/0944.pdf" target="_blank" rel="noopener noreferrer">Solving MDPs with LTLf+ and PPLTL+ Temporal Objectives</a></li>
+                <li><a href="https://dl.acm.org/doi/pdf/10.1145/3716863.3718049" target="_blank" rel="noopener noreferrer">Explaining Control Policies through Predicate Decision Diagrams</a></li>
+                <li><a href="https://arxiv.org/pdf/2502.03568" target="_blank" rel="noopener noreferrer">Code Simulation as a Proxy for High-order Tasks in Large Language Models</a></li>
+                <li><a href="https://arxiv.org/pdf/2401.09074" target="_blank" rel="noopener noreferrer">Code simulation challenges for large language models</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S2352711023002297" target="_blank" rel="noopener noreferrer">Federated learning with swift: An extension of flower and performance evaluation</a></li>
+                <li><a href="https://www.jair.org/index.php/jair/article/download/15865/27073" target="_blank" rel="noopener noreferrer">Language models as a service: Overview of a new paradigm and its challenges</a></li>
+                <li><a href="https://link.springer.com/content/pdf/10.1007/978-3-030-72013-1_17.pdf" target="_blank" rel="noopener noreferrer">dtControl 2.0: explainable strategy representation via decision tree learning steered by experts</a></li>
+            </ul>
+            <div class="defense-footer">
+                <span class="defense-beacon"></span>
+                <span class="defense-note">Publications up to date.</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="year"></span></p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
